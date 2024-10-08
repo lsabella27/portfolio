@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body { font-family: 'Freesentation'  'Showhan'; font-size: 1.6rem; line-height: 1.5; color: #1e1e1e; overflow-x: hidden;}
+.inner { margin: 0 auto; padding: 0 5%;}
+
+:root{ 
+    --mainFont:'Freesentation';
+    --maincolor: #1e1e1e;
+    --subcolor: #4FD9E2;
+}
+
+
+html::-webkit-scrollbar {width: 8px;}
+html::-webkit-scrollbar-track {background: var(--maincolor);}
+html::-webkit-scrollbar-thumb {background: var(--maincolor);}
+
+#header { width: 100%; z-index: 50; position: fixed; }
+#header .inner{ display: flex; justify-content: space-between;}
+#header h1 { opacity: 0;}
+#header .gnb { display: flex;}
+#header .gnb > li { padding: 30px 25px;}
+#header .gnb > li > a { display: block; font-size: 1.8rem; font-weight: 600; color: #fff; cursor: url("../images/mc.png"), auto;}
+#header .gnb > li > a:hover { background: #4FD9E2; color: var(--maincolor); border-radius: 20px; transition: all 0.5s; padding: 0 10px; }
+#header .btn_sitemap { font-size: 3rem; color: #fff; display: none; cursor: pointer; }
+
+
+@media (max-width:768px) {
+    #header .gnb > li { display: none;}
+    #header .gnb .btn_sitemap { display: block; padding: 20px 0;}
+}
+
+
+/* 모바일 탭메뉴 영역 */
+.mgnb_wrap { background: #1e1e1e; z-index: 60; height: 100vh; position: absolute; left: 0; top: 0; width: 100%; position: fixed;}
+.mgnb_wrap .m_gnb { margin-top: 70px;}
+.mgnb_wrap .m_gnb > li > a { display: block; color: #fff; font-family: 'Showhan'; font-size: 5rem; font-weight: 400; text-align: center; padding: 30px 0;}
+
+.mgnb_wrap .mgnb_close { color: #fff;  font-size: 3rem; text-align: right; padding: 20px;}
+
+
+/* footer 영역 */
+#footer {height: 100px; background: #151D21;}
+#footer .footer_text { display: flex; gap: 50px; color: #fff; padding-top: 30px; }
+
+
+@media (max-width:500px) {
+    #footer .footer_text { font-size: 1.4rem;}
+}
