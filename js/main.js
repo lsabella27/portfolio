@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    
+        // 비디오 재생 함수
+        function playVideo() {
+            const video = document.getElementById('myVideo');
+            video.play();
+        }
+
 
     const must_list = new Swiper('.must_list', {
         autoplay: {
