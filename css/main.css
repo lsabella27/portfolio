@@ -55,6 +55,7 @@ body {font-family: 'Freesentation', 'Showhan'; font-size: 1.6rem; line-height: 1
     #mv .track2 { display: block;}
 }
 @media (max-width:500px) {
+    #mv video { height: 900px;}
     #mv .track2 p { font-size: 5.2rem;}
     #mv .track2 span { font-size: 4rem;}
 }
